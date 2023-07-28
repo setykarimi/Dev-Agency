@@ -4,3 +4,48 @@
   padding: 2rem;
   text-align: center;
 }
+
+@font-face {
+  font-family: 'nunito-extra-bold';
+  src: url(./assets/fonts/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'nunito-semi-bold';
+  src: url(./assets/fonts/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'nunito-bold';
+  src: url(./assets/fonts/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'nunito-medium';
+  src: url(./assets/fonts/Nunito-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'nunito-regular';
+  src: url(./assets/fonts/Nunito-Regular.ttf);
+}
+
+.font-extra-bold {
+  font-family: 'nunito-extra-bold';
+}
+
+.font-semi-bold {
+  font-family: 'nunito-semi-bold';
+}
+
+.font-bold {
+  font-family: 'nunito-bold';
+}
+
+.font-regular {
+  font-family: 'nunito-regular';
+}
+
+.font-medium {
+  font-family: 'nunito-medium';
+}
