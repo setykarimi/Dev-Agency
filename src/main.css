@@ -1,9 +1,8 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+
 
 @font-face {
   font-family: 'nunito-extra-bold';
@@ -48,4 +47,8 @@
 
 .font-medium {
   font-family: 'nunito-medium';
+}
+
+body{
+  font-family: 'nunito-regular';
 }
