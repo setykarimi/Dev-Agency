@@ -34,7 +34,9 @@ export default {
         graphite: "#241008",
         flint: "#6B625E",
         hurricane: "#8A7F7B"
-      }
+      },
+      white: "#FFF",
+      transparent: "transparent"
     }
   },
   plugins: [],
