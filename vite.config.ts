@@ -8,6 +8,7 @@ export default defineConfig({
       Components: "/src/components",
       Pages: "/src/pages",
       Layout: "/src/layout",
+      Images: "/src/assets/images",
     },
   },
 })
