@@ -1,6 +1,9 @@
 import homeHeroSection from "Images/homeHeroSection.svg";
+import Brands from "Components/brands/brands";
+
 const Home = () => {
   return (
+   <>
     <div className="bg-background-merino p-4">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center pb-8">
@@ -26,6 +29,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Brands />
+    </>
   );
 };
 
