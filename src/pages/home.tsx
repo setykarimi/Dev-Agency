@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <BannerHome />
-      <div className="container md:px-12 px-4 mx-auto ">
+      <div className="lg:container xl:px-40 px-4 mx-auto">
         <Brands />
         <CardOurProjects />
         <CardWhatWeProvide />
