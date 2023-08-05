@@ -35,11 +35,11 @@ const CardWhatWeProvide = () => {
         },
     ]
     return (
-        <div className="mt-12">
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8 items-end">
+        <>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end mt-20">
                 <div>
                     <Title title="What We Provide" />
-                    <p className="text-typography-flint text-lg mt-2">
+                    <p className="text-typography-flint text-lg mt-2 flex lg:flex-col flex-row whitespace-nowrap flex-wrap">
                         <span className="block">Praesent placerated egestas egestas cras rhone</span>
                         magna rutrum tellus laoreet
                     </p>
@@ -50,11 +50,11 @@ const CardWhatWeProvide = () => {
                 </div>
 
 
-                <div className="md:col-span-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-8">
+                <div className="md:col-span-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                     {items.map(({ img, title, desc, background }) => <Card img={img} title={title} desc={desc} background={background} />)}
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
