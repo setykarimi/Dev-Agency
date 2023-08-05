@@ -2,10 +2,10 @@ import homeHeroSection from "Images/homeHeroSection.svg";
 
 const BannerHome = () => {
     return (<div className="bg-background-merino p-4">
-        <div className="container mx-auto">
+        <div className="lg:container mx-auto xl:px-40">
             <div className="flex flex-col items-center justify-center pb-8">
-                <h1 className="flex flex-col md:text-5xl text-2xl font-extra-bold items-center md:mt-8 mt-4">
-                    <span className="flex gap-2 items-center">
+                <h1 className="flex flex-col md:text-5xl text-3xl font-extra-bold items-center md:mt-8 mt-4 md:px-0 px-10">
+                    <span className="flex gap-2 items-center whitespace-nowrap">
                         {" "}
                         We Build <span className="p-1 bg-background-maize">
                             Digital
