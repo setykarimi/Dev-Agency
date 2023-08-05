@@ -5,11 +5,11 @@ import img2 from "Images/cards/productLandingpage2.png";
 
 const CardOurProjects = () => {
     return (
-        <div className="mt-12">
-           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8 items-end">
+        <>
+           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end mt-20">
                 <div>
                     <Title title="Our Projects" />
-                    <p className="text-typography-flint text-lg mt-2">
+                    <p className="text-typography-flint text-lg mt-2 flex lg:flex-col flex-row whitespace-nowrap flex-wrap">
                         <span className="block">Praesent placerated egestas egestas cras rhone</span>
                         magna rutrum tellus laoreet
                     </p>
@@ -35,7 +35,7 @@ const CardOurProjects = () => {
                     <img src={img2} alt="landing" className="mt-8 mx-auto"/>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
