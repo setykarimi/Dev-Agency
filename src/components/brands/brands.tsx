@@ -7,8 +7,8 @@ import amazon from "Images/logos/amazon.svg"
 const Brands = () => {
     const images = [behance, cocacola, google, dribbble, amazon]
     return (
-        <div className="flex flex-wrap md:justify-between justify-center mt-12 items-center md:gap-4 gap-8">
-            {images.map((img) => <img src={img} alt="logo" className="md:w-auto w-24"/>)}
+        <div className="flex flex-wrap md:justify-between justify-center items-center md:gap-4 gap-8 mt-20">
+            {images.map((img) => <img src={img} alt="logo" className="lg:w-auto md:w-30 w-24"/>)}
         </div>
     );
 }
