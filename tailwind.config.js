@@ -41,7 +41,10 @@ export default {
       },
       white: "#FFF",
       transparent: "transparent"
-    }
+    },
+    listStyleImage: {
+      checkmark: 'url("/images/icons/check.svg")',
+    },
   },
   plugins: [],
 }
