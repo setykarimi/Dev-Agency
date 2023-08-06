@@ -43,7 +43,7 @@ export default {
       transparent: "transparent"
     },
     listStyleImage: {
-      checkmark: 'url("/images/icons/check.svg")',
+      checkmark: 'url("/src/assets/images/icons/check.svg")',
     },
   },
   plugins: [],
