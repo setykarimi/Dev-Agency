@@ -3,6 +3,7 @@ import BannerHome from "Components/banners/bannerHome";
 import CardOurProjects from "Components/cards/cardOurProjects";
 import CardWhatWeProvide from "Components/cards/cardWhatWeProvide";
 import CardBestUserExperience from "Components/cards/cardBestUserExperience";
+import CardBestIdeas from "Components/cards/cardBestIdeas";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <CardOurProjects />
         <CardWhatWeProvide />
         <CardBestUserExperience />
+        <CardBestIdeas />
       </div>
     </>
   );
