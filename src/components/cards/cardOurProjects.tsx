@@ -6,7 +6,7 @@ import img2 from "Images/cards/productLandingpage2.png";
 const CardOurProjects = () => {
     return (
         <>
-           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end mt-20">
+           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-5">
                 <div>
                     <Title title="Our Projects" />
                     <p className="text-typography-flint text-lg mt-2 flex lg:flex-col flex-row whitespace-nowrap flex-wrap">
