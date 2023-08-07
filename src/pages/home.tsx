@@ -1,9 +1,10 @@
-import Brands from "Components/brands/brands";
 import BannerHome from "Components/banners/bannerHome";
+import Brands from "Components/brands/brands";
+import CardBestIdeas from "Components/cards/cardBestIdeas";
+import CardBestUserExperience from "Components/cards/cardBestUserExperience";
 import CardOurProjects from "Components/cards/cardOurProjects";
 import CardWhatWeProvide from "Components/cards/cardWhatWeProvide";
-import CardBestUserExperience from "Components/cards/cardBestUserExperience";
-import CardBestIdeas from "Components/cards/cardBestIdeas";
+import SliderHome from "Components/slider/sliderHome";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <CardWhatWeProvide />
         <CardBestUserExperience />
         <CardBestIdeas />
+        <SliderHome />
       </div>
     </>
   );
