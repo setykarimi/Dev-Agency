@@ -23,7 +23,7 @@ export default {
       },
       accent: {
         cyan: "#26C6DA",
-        purple: "##BE63F9",
+        purple: "#BE63F9",
         green: "#1CE524",
         blue: "#1D5EF4",
         red: "#FF391A"
