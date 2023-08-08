@@ -45,8 +45,18 @@ const SliderHome = () => {
             </div>
             <Swiper
                 modules={[Navigation]}
-                spaceBetween={50}
-                slidesPerView={2}
+                breakpoints={{
+                    576: {
+                      // width: 576,
+                      slidesPerView: 1,
+                      spaceBetween: 10
+                    },
+                    768: {
+                      // width: 768,
+                      slidesPerView: 2,
+                      spaceBetween: 30
+                    },
+                  }}
             >
                 {sliders.map((slider) => <SwiperSlide key={slider.name}><SlideOne slider={slider} /></SwiperSlide>)}
 
