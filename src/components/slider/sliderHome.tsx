@@ -47,16 +47,15 @@ const SliderHome = () => {
             <Swiper
                 modules={[Navigation]}
                 navigation={true}  
+                spaceBetween={30}
                 breakpoints={{
                     576: {
                       // width: 576,
                       slidesPerView: 1,
-                      spaceBetween: 10
                     },
                     768: {
                       // width: 768,
                       slidesPerView: 2,
-                      spaceBetween: 30
                     },
                   }}
             >
