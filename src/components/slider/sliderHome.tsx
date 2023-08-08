@@ -2,6 +2,7 @@ import Title from "Components/title/title";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 import rate from "Images/icons/stars.svg";
 import avatar1 from "Images/avatars/1.png";
@@ -45,6 +46,7 @@ const SliderHome = () => {
             </div>
             <Swiper
                 modules={[Navigation]}
+                navigation={true}  
                 breakpoints={{
                     576: {
                       // width: 576,
@@ -78,7 +80,6 @@ type SliderItemProps = {
         textColor: string
     }
 }
-
 
 const SlideOne = ({ slider }: SliderItemProps) => {
     return (
