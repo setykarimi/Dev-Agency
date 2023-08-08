@@ -5,6 +5,7 @@ import CardBestUserExperience from "Components/cards/cardBestUserExperience";
 import CardOurProjects from "Components/cards/cardOurProjects";
 import CardWhatWeProvide from "Components/cards/cardWhatWeProvide";
 import SliderHome from "Components/slider/sliderHome";
+import BannerNewsLetter from "Components/banners/bannerNewsLetter";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <CardBestUserExperience />
         <CardBestIdeas />
         <SliderHome />
+        <BannerNewsLetter />
       </div>
     </>
   );
