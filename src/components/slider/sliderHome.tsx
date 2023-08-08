@@ -15,17 +15,25 @@ const SliderHome = () => {
             name: "Ethan Brooks",
             position: "Ui/Ux Designer",
             description: "Nulla pulvinar felis ipsum. Nulla facilisi. Duis placerat erd urna Lorem ipsum dolor sit amet con adipiscing elit. Proin gravida orc pulvinar aliquet.",
-            bgColor: "background-merino",
-            textColor: "primary-orange-default"
+            bgColor: "#F4ECE0",
+            textColor: "#FF733B"
         },
         {
             avatar: avatar2,
             name: "Callum Bolton",
             position: "Ui/Ux Designer",
             description: "Nulla pulvinar felis ipsum. Nulla facilisi. Duis placerat erd urna Lorem ipsum dolor sit amet con adipiscing elit. Proin gravida orc pulvinar aliquet.",
-            bgColor: "[#E3F8FA]",
-            textColor: "accent-cyan"
+            bgColor: "#E3F8FA",
+            textColor: "#26C6DA"
         },
+        {
+            avatar: avatar1,
+            name: "Sety Karimi",
+            position: "Frontend Developer",
+            description: "Nulla pulvinar felis ipsum. Nulla facilisi. Duis placerat erd urna Lorem ipsum dolor sit amet con adipiscing elit. Proin gravida orc pulvinar aliquet.",
+            bgColor: "#F5E6FE",
+            textColor: "#BE63F9"
+        }
     ]
     return (
         <div className="md:mt-10">
@@ -62,10 +70,10 @@ type SliderItemProps = {
 }
 
 
-const SlideOne = ({slider}: SliderItemProps) => {
+const SlideOne = ({ slider }: SliderItemProps) => {
     return (
-        <div className={`bg-${slider.bgColor} px-10 pt-20 pb-10 rounded-md relative mt-12`}>
-            <div className={`-top-12 z-10 absolute rounded-full p-[3px] bg-${slider.textColor}`}>
+        <div className="px-10 pt-20 pb-10 rounded-md relative mt-12" style={{ background: slider.bgColor }}>
+            <div className="-top-12 z-10 absolute rounded-full p-[3px]" style={{background: slider.textColor}}>
                 <img src={slider.avatar} alt="avatar" />
             </div>
             <div className="flex justify-between relative">
@@ -75,7 +83,7 @@ const SlideOne = ({slider}: SliderItemProps) => {
                         {slider.position}
                     </span>
                 </div>
-                <span className={`block text-${slider.textColor} font-black absolute right-0 top-0 leading-[100px]`} style={{ fontSize: "120px" }}>"</span>
+                <span className="block font-black absolute right-0 top-0 leading-[100px]" style={{ fontSize: "120px", color: slider.textColor }}>"</span>
             </div>
 
 
