@@ -83,13 +83,13 @@ type SliderItemProps = {
 
 const SlideOne = ({ slider }: SliderItemProps) => {
     return (
-        <div className="px-10 pt-20 pb-10 rounded-md relative mt-12" style={{ background: slider.bgColor }}>
+        <div className="md:px-10 px-6 pt-20 md:pb-10 pb-6 rounded-md relative mt-12" style={{ background: slider.bgColor }}>
             <div className="-top-12 z-10 absolute rounded-full p-[3px]" style={{background: slider.textColor}}>
                 <img src={slider.avatar} alt="avatar" />
             </div>
             <div className="flex justify-between relative">
                 <div>
-                    <span className="text-typography-graphite font-semibold block text-lg">{slider.name}</span>
+                    <span className="text-typography-graphite font-semibold block md:text-lg text-xl">{slider.name}</span>
                     <span className="text-typography-hurricane block">
                         {slider.position}
                     </span>
