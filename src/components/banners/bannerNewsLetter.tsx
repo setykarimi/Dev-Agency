@@ -16,12 +16,14 @@ const BannerNewsLetter = () => {
                         magna rutrum tellus laoreet
                     </span>
                 </p>
+                <form>
                 <div className=" bg-white p-1 rounded-md flex gap-4 w-full" style={{
                     boxShadow: '0px 30px 49px 0px rgba(156, 45, 0, 0.09)'
                 }}>
                     <input type="email" className="w-5/6 outline-none px-4 text-typography-hurricane" placeholder="Enter your email address"/>
-                    <button className=" bg-primary-orange-default text-white py-2 px-4 rounded">Subscibe</button>
+                    <button type="submit" className=" bg-primary-orange-default text-white py-2 px-4 rounded">Subscibe</button>
                 </div>
+                </form>
             </div>
             <img src={rightChevron} alt="right" className="lg:block hidden"/>
 
