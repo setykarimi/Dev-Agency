@@ -37,7 +37,7 @@ const SliderHome = () => {
         }
     ]
     return (
-        <div className="md:mt-10">
+        <div className="md:mt-10 relative">
             <div className="mb-8">
                 <Title title="Customers Feedback" />
                 <p className="text-typography-flint md:text-lg mt-4">
