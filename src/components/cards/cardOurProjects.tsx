@@ -9,8 +9,8 @@ const CardOurProjects = () => {
            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-5">
                 <div>
                     <Title title="Our Projects" />
-                    <p className="text-typography-flint text-lg mt-2 flex lg:flex-col flex-row whitespace-nowrap flex-wrap">
-                        <span className="block">Praesent placerated egestas egestas cras rhone</span>
+                    <p className="text-typography-flint text-lg mt-2 md:flex lg:flex-col flex-row md:whitespace-nowrap flex-wrap">
+                        <span className="md:block">Praesent placerated egestas egestas cras rhone </span>
                         magna rutrum tellus laoreet
                     </p>
                 </div>
