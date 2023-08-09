@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 
 
 
@@ -49,6 +49,68 @@
   font-family: 'nunito-medium';
 }
 
-body{
+body {
   font-family: 'nunito-regular';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F4ECE0;
+  border-radius: 5px;
+}
+
+@media(max-width: 768px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 7rem;
+  }
+}
+
+@media(max-width: 576px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 8rem;
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+  }
+
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after,
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    transform: scale(.6);
+  }
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: url(./assets/images/icons/arrowRight.svg);
+  position: absolute;
+  top: -0.5rem;
+}
+
+.swiper-button-prev {
+  left: auto;
+  right: 4rem;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: url(./assets/images/icons/arrowLeft.svg);
+  position: absolute;
+  top: -0.5rem;
+}
+
+.swiper.swiper-initialized,
+.swiper-wrapper {
+  position: initial;
 }
