@@ -1,9 +1,8 @@
+import BannerNewsLetter from "Components/banners/bannerNewsLetter";
 import HeroSectionBanner from "Components/banners/heroSectionBanner";
-import { whatWeProvided } from "Data/whatWeProvided";
 import { Card as ProvidedCard } from "Components/cards/cardWhatWeProvide";
 import Title from "Components/title/title";
-import BannerNewsLetter from "Components/banners/bannerNewsLetter";
-import Pagination from "../components/pagination/pagination";
+import { whatWeProvided } from "Data/whatWeProvided";
 
 const OurServices = () => {
     return (
@@ -20,7 +19,7 @@ const OurServices = () => {
                     </p>
                 </div>
                 <div className="md:col-span-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-8">
-                    {whatWeProvided.map(({ img, title, desc, background }) => <ProvidedCard img={img} title={title} desc={desc} background={background} />)}
+                    {whatWeProvided.map(({ img, title, desc, background, link }) => <ProvidedCard img={img} title={title} desc={desc} background={background} link={link}/>)}
                 </div>
             </div>
             <BannerNewsLetter />
