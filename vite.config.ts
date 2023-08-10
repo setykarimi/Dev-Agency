@@ -9,6 +9,7 @@ export default defineConfig({
       Pages: "/src/pages",
       Layout: "/src/layout",
       Images: "/src/assets/images",
+      Data: "/src/assets/data",
     },
   },
 })
