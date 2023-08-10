@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 type BannerTypes = {
     title: string
+    breadcrumbs?: string
 }
 
-const HeroSectionBanner = ({title}: BannerTypes) => {
+const HeroSectionBanner = ({title, breadcrumbs}: BannerTypes) => {
     return ( 
         <div className="bg-background-merino p-4">
         <div className="lg:container mx-auto xl:px-40">
@@ -17,6 +18,8 @@ const HeroSectionBanner = ({title}: BannerTypes) => {
                 <div className="mt-6 flex items-center gap-2 text-typography-flint">
                     <Link to="/">Home</Link>
                     <span><img src={chevronRight} alt="right" /></span>
+                    {breadcrumbs && <>  <span>{breadcrumbs}</span>
+                    <span><img src={chevronRight} alt="right" /></span></>}
                     <span>{title}</span>
                 </div>
             </div>
