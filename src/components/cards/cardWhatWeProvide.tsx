@@ -9,6 +9,7 @@ type CardProps = {
     title: string
     desc: string
     background: string
+    link: string
 }
 
 const CardWhatWeProvide = () => {
@@ -29,7 +30,7 @@ const CardWhatWeProvide = () => {
 
 
                 <div className="md:col-span-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-                    {whatWeProvided.slice(0,3).map(({ img, title, desc, background }) => <Card img={img} title={title} desc={desc} background={background} />)}
+                    {whatWeProvided.slice(0, 3).map(({ img, title, desc, background }) => <Card img={img} title={title} desc={desc} background={background} />)}
                 </div>
             </div>
         </>
@@ -38,14 +39,14 @@ const CardWhatWeProvide = () => {
 
 export default CardWhatWeProvide;
 
-export const Card = ({ background, img, title, desc }: CardProps) => {
+export const Card = ({ background, img, title, desc, link }: CardProps) => {
     return (
         <div className="flex flex-col items-center justify-center text-center gap-4 px-8 py-16 rounded-md" style={{ background: background }}>
             <img src={img} />
 
             <span className="block -mt-12 font-bold text-2xl">{title}</span>
             <p className=" text-typography-flint text-lg">{desc}</p>
-            <Link to="" className="font-medium underline text-lg">Learn More</Link>
+            <Link to={link} className="font-medium underline text-lg">Learn More</Link>
         </div>
     )
 }
