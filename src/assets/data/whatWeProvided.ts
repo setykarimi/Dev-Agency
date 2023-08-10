@@ -10,38 +10,44 @@ export const whatWeProvided = [
         img: appDesign,
         title: "App Design",
         desc: "Praesent placerated egestas egestas cras rhone magna rutrum tellus laoreet",
-        background: "#E3F8FA"
+        background: "#E3F8FA",
+        link: "/our-services/app-design"
     },
     {
         img: webDesign,
         title: "Web Design",
         desc: "Praesent placerated egestas egestas cras rhone magna rutrum tellus laoreet",
-        background: "#F4ECE0"
+        background: "#F4ECE0",
+        link: ""
     },
     {
         img: webDevelopment,
         title: "Web Development",
         desc: "Praesent placerated egestas egestas cras rhone magna rutrum tellus laoreet",
-        background: "#F5E6FE"
+        background: "#F5E6FE", 
+        link: ""
     },
     {
-        
+
         img: interfaceDesign,
         title: "Interface Design",
         desc: "Praesent placerated egestas egestas cras rhone magna rutrum tellus laoreet",
-        background: "#FFE6E2"
+        background: "#FFE6E2",
+        link: ""
     },
     {
         img: visualDesign,
         title: "Visual Design",
         desc: "Praesent placerated egestas egestas cras rhone magna rutrum tellus laoreet",
-        background: "#E0E6F4"
+        background: "#E0E6F4",
+        link: ""
     },
     {
         img: uxDesign,
         title: "Ux Design",
         desc: "Praesent placerated egestas egestas cras rhone magna rutrum tellus laoreet",
-        background: "#E2FAE3"
+        background: "#E2FAE3",
+        link: ""
     }
-    
+
 ]
