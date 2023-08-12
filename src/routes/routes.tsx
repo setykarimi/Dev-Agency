@@ -3,6 +3,7 @@ import Home from 'Pages/home'
 import OurServices from 'Pages/ourServices'
 import Layout from 'Layout/layout';
 import AppDesign from 'Pages/appDesign';
+import Projects from 'Pages/projects';
 
 const routes = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
       {
         path: "/our-services/app-design",
         element: <AppDesign />
+      },
+      {
+        path: "/projects",
+        element: <Projects />
       }
     ]
   },
