@@ -1,18 +1,8 @@
 import Title from "Components/title/title";
 import { Link } from "react-router-dom";
-
 import { whatWeProvided } from "Data/whatWeProvided";
 
-
-type CardProps = {
-    img: string
-    title: string
-    desc: string
-    background: string
-    link: string
-}
-
-const CardWhatWeProvide = () => {
+export default function CardWhatWeProvide() {
     return (
         <>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-5">
@@ -37,7 +27,13 @@ const CardWhatWeProvide = () => {
     );
 }
 
-export default CardWhatWeProvide;
+type CardProps = {
+    img: string
+    title: string
+    desc: string
+    background: string
+    link: string
+}
 
 export const Card = ({ background, img, title, desc, link }: CardProps) => {
     return (
