@@ -1,12 +1,13 @@
 import Title from "Components/title/title";
 
-import img1 from "Images/cards/productLandingpage1.png";
-import img2 from "Images/cards/productLandingpage2.png";
+import img1 from "Images/cards/projectsWatch.png";
+import img2 from "Images/cards/projectsSEO.png";
+import { projects } from "../../assets/data/projects";
 
-const CardOurProjects = () => {
+export default function CardOurProjects() {
     return (
         <>
-           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-5">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-5">
                 <div>
                     <Title title="Our Projects" />
                     <p className="text-typography-flint text-lg mt-2 md:flex lg:flex-col flex-row md:whitespace-nowrap flex-wrap">
@@ -15,28 +16,33 @@ const CardOurProjects = () => {
                     </p>
                 </div>
 
-              <div className="flex md:justify-end justify-center md:order-none order-last ">
-              <button className="bg-background-merino text-primary-orange-default md:py-3 py-2 md:px-8 px-4 h-fit w-fit rounded font-medium">See More</button>
-              </div>
-            
-           
-                <div className="bg-[#F5E6FE] pt-12 px-4 rounded">
-                    <div className="block text-2xl font-bold text-center">
-                        <span className="block">Watch - Product Responsive </span>
-                        <span className="block">Landing Page</span>
-                    </div>
-                    <img src={img1} alt="landing" className="mt-8 mx-auto"/>
+                <div className="flex md:justify-end justify-center md:order-none order-last ">
+                    <button className="bg-background-merino text-primary-orange-default md:py-3 py-2 md:px-8 px-4 h-fit w-fit rounded font-medium">See More</button>
                 </div>
-                <div className="bg-background-merino pt-12 px-4 rounded">
-                <div className="block text-2xl font-bold text-center">
-                        <span className="block">SEO Agency - Creative</span>
-                        <span className="block">Landing Page</span>
-                    </div>
-                    <img src={img2} alt="landing" className="mt-8 mx-auto"/>
-                </div>
+
+                {projects.slice(0, 2).map(({ backgroundColor, img, title }) => <Card backgroundColor={backgroundColor} img={img} title={title} />)}
+
+
             </div>
         </>
     );
 }
 
-export default CardOurProjects;
+
+type CardProps = {
+    backgroundColor: string
+    img: string
+    title: string
+}
+
+export const Card = ({ backgroundColor, img, title }: CardProps) => {
+    return (
+        <div className="pt-12 px-4 rounded" style={{ background: backgroundColor }}>
+            <div className="block text-2xl font-bold text-center">
+                <span className="block">{title}</span>
+                <span className="block">Landing Page</span>
+            </div>
+            <img src={img} alt="landing" className="mt-8 mx-auto" />
+        </div>
+    )
+}
