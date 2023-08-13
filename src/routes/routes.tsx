@@ -3,7 +3,8 @@ import Home from 'Pages/home'
 import OurServices from 'Pages/ourServices'
 import Layout from 'Layout/layout';
 import AppDesign from 'Pages/appDesign';
-import Projects from 'Pages/projects';
+import Projects from 'Pages/projects/projects';
+import { Watch, Education, Mdcl, Seo } from 'Pages/projects/projectsSub';
 
 const routes = createBrowserRouter([
   {
@@ -25,7 +26,24 @@ const routes = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />
-      }
+      },
+      {
+        path: "/projects/watch",
+        element: <Watch />
+      },
+      {
+        path: "/projects/seo",
+        element: <Seo />
+      },
+      {
+        path: "/projects/education",
+        element: <Education />
+      },
+      {
+        path: "/projects/mdcl",
+        element: <Mdcl />
+      },
+
     ]
   },
 ]);
