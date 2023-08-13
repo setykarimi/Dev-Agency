@@ -7,21 +7,25 @@ export const projects = [
     {
         backgroundColor: "#F5E6FE",
         img: projectsWatch,
-        title: "Watch - Product Responsive"
+        title: "Watch - Product Responsive",
+        path: "/projects/watch"
     },
     {
         backgroundColor: "#F4ECE0",
         img: projectsSEO,
-        title: "SEO Agency - Creative"
+        title: "SEO Agency - Creative",
+        path: "/projects/seo"
     },
     {
         backgroundColor: "#E1F7F9",
         img: projectsEducation,
-        title: "E-Online - Education"
+        title: "E-Online - Education",
+        path: "/projects/education"
     },
     {
         backgroundColor: "#E0E6F4",
         img: projectMDCL,
-        title: "MDCL - Medical"
+        title: "MDCL - Medical",
+        path: "/projects/mdcl"
     }
 ]
