@@ -1,5 +1,5 @@
 type TitleProps = {
-    title: StringConstructor
+    title: string
     customClass?: string
 }
 const Title = ({ title, customClass }: TitleProps) => {
