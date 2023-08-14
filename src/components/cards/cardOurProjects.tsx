@@ -34,7 +34,7 @@ type CardProps = {
 
 export const Card = ({ backgroundColor, img, title, path }: CardProps) => {
     return (
-        <Link to={path} className="pt-12 px-4 rounded" style={{ background: backgroundColor }}>
+        <Link to={path} className={`pt-12 px-4 rounded ${path ? "cursor-pointer" : "cursor-default"}`} style={{ background: backgroundColor }}>
             <div className="block text-2xl font-bold text-center">
                 <span className="block">{title}</span>
                 <span className="block">Landing Page</span>
