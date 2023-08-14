@@ -5,6 +5,7 @@ import Layout from 'Layout/layout';
 import AppDesign from 'Pages/appDesign';
 import Projects from 'Pages/projects/projects';
 import { Watch, Education, Mdcl, Seo } from 'Pages/projects/projectsSub';
+import Blog from 'Pages/blog';
 
 const routes = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const routes = createBrowserRouter([
       {
         path: "/projects/mdcl",
         element: <Mdcl />
+      },
+      {
+        path: "/blog",
+        element: <Blog />
       },
 
     ]
