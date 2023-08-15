@@ -5,7 +5,8 @@ import Layout from 'Layout/layout';
 import AppDesign from 'Pages/appDesign';
 import Projects from 'Pages/projects/projects';
 import { Watch, Education, Mdcl, Seo } from 'Pages/projects/projectsSub';
-import Blog from 'Pages/blog';
+import Blog from 'Pages/blog/blog';
+import BestDesignTips from 'Pages/blog/bestDesignTips';
 
 const routes = createBrowserRouter([
   {
@@ -48,7 +49,10 @@ const routes = createBrowserRouter([
         path: "/blog",
         element: <Blog />
       },
-
+      {
+        path: "/blog/best-design-tips",
+        element: <BestDesignTips />
+      },
     ]
   },
 ]);
