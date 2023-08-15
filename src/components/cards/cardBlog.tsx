@@ -1,6 +1,6 @@
 type CardBlogProps = {
     img: string
-    category: 'DESIGN' | 'FASHION' | 'TRAVEL' | 'CREATIVE'
+    category?: 'DESIGN' | 'FASHION' | 'TRAVEL' | 'CREATIVE'
     title: string
     date: string
 }
