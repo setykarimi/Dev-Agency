@@ -11,10 +11,10 @@ import ve from 'Images/icons/ve.svg'
 const Footer = () => {
     const links = [
         "Home",
-        "Abput us",
+        "About us",
         "Portfolio",
-        "contact Me",
-        "privacy Policy"
+        "Contact Me",
+        "Privacy Policy"
     ]
     
     const socialMedias = [
