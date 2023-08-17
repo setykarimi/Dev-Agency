@@ -9,7 +9,7 @@ const OurServices = () => {
         <>
             <HeroSectionBanner title="Services" />
             <div className="lg:container xl:px-40 px-4 mx-auto">
-                <div className="text-center flex flex-col justify-center items-center mt-20">
+                <div className="text-center flex flex-col justify-center items-center md:mt-20 mt-10">
                     <Title title="What We Provide" />
                     <p className="text-typography-flint text-lg mt-2 md:flex lg:flex-col flex-row md:whitespace-nowrap flex-wrap">
                         <span className="md:block">
