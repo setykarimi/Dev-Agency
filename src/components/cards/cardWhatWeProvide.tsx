@@ -5,7 +5,7 @@ import { whatWeProvided } from "Data/whatWeProvided";
 export default function CardWhatWeProvide() {
     return (
         <>
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-5">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-10">
                 <div>
                     <Title title="What We Provide" />
                     <p className="text-typography-flint text-lg mt-2 md:flex lg:flex-col flex-row md:whitespace-nowrap flex-wrap">
