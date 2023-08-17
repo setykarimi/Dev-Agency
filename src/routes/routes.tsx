@@ -8,6 +8,7 @@ import { Watch, Education, Mdcl, Seo } from 'Pages/projects/projectsSub';
 import Blog from 'Pages/blog/blog';
 import BestDesignTips from 'Pages/blog/bestDesignTips';
 import AboutUs from 'Pages/AboutUs';
+import ContactUs from 'Pages/contactUs';
 
 const routes = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const routes = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUs />
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />
       },
     ]
   },
