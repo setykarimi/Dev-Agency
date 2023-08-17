@@ -4,7 +4,7 @@ import rightChevron from 'Images/icons/rightChevron.svg';
 
 const BannerNewsLetter = () => {
     return (
-        <div className="md:mt-20 mt-5 text-center flex justify-center items-center">
+        <div className="md:mt-20 mt-10 text-center flex justify-center items-center">
             <img src={leftChevron} alt="left" className="lg:block hidden"/>
             <div className="flex flex-col gap-4 justify-center items-center ">
                 <Title title="Newsletter Subscription" />
