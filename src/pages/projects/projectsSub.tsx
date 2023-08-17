@@ -63,7 +63,7 @@ export default function ProjectsSubDetails({ cardData, title, titleSub }: Projec
     return (
         <>
             <HeroSectionBanner title={title} breadcrumbs="Projects" />
-            <div className="lg:container xl:px-40 px-4 mx-auto md:mt-20 mt-5">
+            <div className="lg:container xl:px-40 px-4 mx-auto md:mt-20 mt-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 md:gap-16 gap-8 items-center">
                     <div>
                         <Title title={`What ${titleSub}`}
@@ -81,7 +81,7 @@ export default function ProjectsSubDetails({ cardData, title, titleSub }: Projec
                     <ProjectsCard backgroundColor={cardData.backgroundColor} img={cardData.img} title={cardData.title} />
                 </div>
 
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 bg-background-merino md:p-16 p-8 md:mt-20 mt-5 rounded-lg">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 bg-background-merino md:p-16 p-8 md:mt-20 mt-10 rounded-lg">
                     {details.map(({ img, title, subTitle, desc }) => <div className="flex gap-4 items-center">
                         <div className="bg-primary-orange-default rounded-full md:w-20 w-16 md:h-20 h-16 flex justify-center items-center md:p-6 p-5">
                             <img src={img} alt="icon" />
