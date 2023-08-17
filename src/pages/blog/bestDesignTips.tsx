@@ -5,8 +5,9 @@ import facebook from 'Images/icons/facebook.svg'
 import twitter from 'Images/icons/twitter.svg'
 import dribbble from 'Images/icons/dribbble.svg'
 import linkedin from 'Images/icons/linkedin.svg'
-// import avatar from '../../assets/images/blogs/avatar.png'
-import avatar from '../../assets/images/blogs/avatar.jpg'
+import avatar from 'Images/blogs/avatar.png'
+import hero from 'Images/blogs/hero.png'
+import Comment from "../../components/forms/comment";
 
 
 const BestDesignTips = () => {
@@ -20,34 +21,35 @@ const BestDesignTips = () => {
     return (
         <>
             <HeroSectionBanner title="Best Design Tips You Will Read This Year" breadcrumbs="Design" />
-            <div className="lg:container xl:px-40 px-4 mx-auto md:mt-20 mt-5">
-                <div>
+            <div className="lg:container xl:px-40 px-4 mx-auto md:mt-20 mt-10">
+                <img src={hero}/>
+                <div className="md:mt-20 mt-10">
                     <span className=" text-typography-hurricane">By Dev's -- 24 August 2022 -- 4 COMMENTS</span>
                     <p className="text-typography-flint mt-4 md:text-lg text-justify">
                         Proin gravida ex eget augue eleifend eleifend. Integer dui auctor vehicula urna. Ut ullamcorper neque dui, imperdiet ornare ipsum semper quis. Sed lorem ipsum, molestie in leo ac, convallis eleifend diam. Pellentesque condimentum mauris neque, at vestibulum sapien hendrerit fringilla. Maecenas ornare sollicitudin risus, vitae gravida erat porttitor quis. Sed elementum blandit ultricies. Quisque velit turpis, interdum sit amet suscipit sed, placerat
                     </p>
                 </div>
-                <div className="md:mt-20 mt-5">
+                <div className="md:mt-20 mt-10">
                     <Title title="User Interview" />
                     <p className=" text-typography-flint mt-4 md:text-lg text-justify">
                         Nulla volutpat enim lorem, non volutpat tortor consequat ac. Quisque ipsum arcu, vehicula sit amet tempor non, blandit at augue. Donec semper velit eget ligula urna volutpat aliquet. Donec eget ligula at mauris sollicitudin congue. Proin dignissim vitae ipsum a laoreet. In molestie imperdiet ante, eget lacinia lorem venenatis vitae. Donec et tristique nunc.
                     </p>
                 </div>
 
-                <div className="md:mt-20 mt-5 bg-background-merino rounded-md md:border-l-4 border-l-primary-orange-default md:border-t-0 border-t-4 border-t-primary-orange-default md:p-8 p-4 flex md:flex-row flex-col gap-4 relative">
+                <div className="md:mt-20 mt-10 bg-background-merino rounded-md md:border-l-4 border-l-primary-orange-default md:border-t-0 border-t-4 border-t-primary-orange-default md:p-8 p-4 flex md:flex-row flex-col gap-4 relative">
                     <span className=" font-black leading-[100px] absolute lg:top-12 md:top-16 top-8 text-background-maize text-[120px] flex md:justify-start md:left-8 left-0 md:w-fit w-full justify-center">
                         "
                     </span>
-                    <p className="text-typography-flint md:text-lg md:ml-20 md:mt-0 mt-20 md:text-justify text-center leading-relaxed">
+                    <p className="text-typography-flint md:text-lg md:ml-20 md:mt-0 mt-10 md:text-justify text-center leading-relaxed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet mollis nunc, non aliquam magna tristique at. Nulla et lorem finibus, faucibus nibh nec, aliquam nisi. Integer nec erat ex. In ac libero id erat pulvinar faucibus nec sit amet erat. Aenean magna ipsum dictum.
                     </p>
                 </div>
 
-                <p className="text-typography-flint md:text-lg md:mt-20 mt-5 text-justify">
+                <p className="text-typography-flint md:text-lg md:mt-20 mt-10 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet mollis nunc, non aliquam magna tristique at. Nulla et lorem finibus, faucibus nibh nec, aliquam nisi. Integer nec erat ex. In ac libero id erat pulvinar faucibus nec sit amet erat. Aenean magna ipsum, dictum a lacus sit amet, blandit cursus augue. Nullam id augue sagittis, molestie urna nec, hendrerit ipsum. Etiam posuere maximus sapien lobortis interdum. Ut laoreet urna suscipit quam.
                 </p>
 
-                <div className="grid md:grid-cols-2 col-span-1 gap-8 md:mt-20 mt-5 items-center">
+                <div className="grid md:grid-cols-2 col-span-1 gap-8 md:mt-20 mt-10 items-center">
                     <div className="flex md:justify-start justify-center">
                         <img src={picture} alt="picture" />
                     </div>
@@ -74,7 +76,7 @@ const BestDesignTips = () => {
                     </div>
                 </div>
 
-                <div className="md:mt-20 mt-5">
+                <div className="md:mt-20 mt-10">
                     <Title title="Interface Design" />
                     <p className="text-typography-flint md:text-lg mt-4 text-justify">
                         Nulla volutpat enim lorem, non volutpat tortor consequat ac. Quisque ipsum arcu, vehicula sit amet tempor non, blandit at augue. Donec semper velit eget urna igula volutpat aliquet. Donec eget ligula at mauris sollicitudin congue. Proin dignissim vitae ipsum a
@@ -82,7 +84,7 @@ const BestDesignTips = () => {
                     </p>
                 </div>
 
-                <div className="md:mt-20 mt-5 pt-8 border-t border-t-background-merino flex md:flex-row flex-col justify-between md:gap-0 gap-8">
+                <div className="md:mt-20 mt-10 pt-8 border-t border-t-background-merino flex md:flex-row flex-col justify-between md:gap-0 gap-8">
                     <div className="flex gap-4 items-center">
                         <span className="font-bold md:text-xl text-lg text-typography-graphite">SOCIAL:</span>
                         {socialMedia.map((media) => <div className="bg-background-merino rounded-full w-10 h-10 border-2 border-primary-orange-default flex items-center justify-center"><img src={media} alt="media" /></div>)}
@@ -94,18 +96,20 @@ const BestDesignTips = () => {
                 </div>
 
 
-                <div className="rounded md:mt-20 mt-5 gap-8 bg-background-merino p-12 flex md:flex-row flex-col items-center">
-                    <img className={avatar} alt="avatar" />
+                <div className="rounded md:mt-20 mt-10 gap-8 bg-background-merino md:p-8 p-6 flex md:flex-row flex-col items-center">
+                    <img src={avatar} alt="avatar" className="rounded-full w-40 h-40 object-cover"/>
                     <div>
-                        <span className="block text-typography-graphite md:text-2xl text-xl font-bold">
+                        <span className="block text-typography-graphite md:text-2xl text-xl font-bold md:text-left text-center">
                             Ethan Brooks
                         </span>
-                        <span className="blog mt-4 text-typography-hurricane text-sm">Blog Writter</span>
-                        <p className="text-typography-flint md:text-lg mt-4 text-justify">
+                        <span className="block mt-4 text-typography-hurricane text-sm md:text-left text-center">Blog Writter</span>
+                        <p className="text-typography-flint md:text-lg mt-4 md:text-justify text-center leading-relaxed">
                             Nulla volutpat enim lorem, non volutpat tortor consequat ac. Quisque ipsum arcu, vehicula sit amet tempor non, blandit at augue. Donec semper velit congue.
                         </p>
                     </div>
                 </div>
+
+                <Comment />
             </div>
         </>
     );
