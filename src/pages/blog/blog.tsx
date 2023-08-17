@@ -20,7 +20,7 @@ const Blog = () => {
                 </div>
 
                 <div className="md:col-span-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-8">
-                    {blogs.map((blog) => <CardBlog img={blog.img} category={blog.category == "CREATIVE" ? "CREATIVE" : blog.category == "TRAVEL" ? "TRAVEL" : blog.category == "FASHION" ? "FASHION" : "DESIGN"} title={blog.title} date={blog.date} />)}
+                    {blogs.map((blog) => <CardBlog path={blog.path} img={blog.img} category={blog.category == "CREATIVE" ? "CREATIVE" : blog.category == "TRAVEL" ? "TRAVEL" : blog.category == "FASHION" ? "FASHION" : "DESIGN"} title={blog.title} date={blog.date} />)}
                 </div>
             </div>
             <BannerNewsLetter />
