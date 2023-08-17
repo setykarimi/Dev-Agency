@@ -35,7 +35,7 @@ const Navbar = () => {
                     <div className='flex gap-4'>
                         {menuItems.map(({ name, link }) => <Link to={link} className='font-medium border-b border-b-transparent text-typography-flint hover:border-b hover:border-b-primary-orange-default hover:font-bold transition-all'>{name}</Link>)}
                     </div>
-                    <button className='py-2 px-4 bg-primary-orange-default text-white rounded'>Contact</button>
+                    <Link to="contact-us"className='py-2 px-4 bg-primary-orange-default text-white rounded'>Contact</Link>
                 </div>
             </div>
         </nav>
