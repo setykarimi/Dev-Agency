@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function CardOurProjects() {
     return (
         <>
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-5">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-end md:mt-20 mt-10">
                 <div>
                     <Title title="Our Projects" />
                     <p className="text-typography-flint text-lg mt-2 md:flex lg:flex-col flex-row md:whitespace-nowrap flex-wrap">
