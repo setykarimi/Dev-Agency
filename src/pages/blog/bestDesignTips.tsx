@@ -1,18 +1,18 @@
+import avatar from 'Images/blogs/avatar.png';
+import hero from 'Images/blogs/hero.png';
+import picture from 'Images/blogs/picture.png';
+import facebook from 'Images/icons/facebookOrange.svg';
+import instagram from 'Images/icons/instagramOrange.svg';
+import twitter from 'Images/icons/twitterOrange.svg';
+import ve from 'Images/icons/veOrange.svg';
 import HeroSectionBanner from "../../components/banners/heroSectionBanner";
-import Title from "../../components/title/title";
-import picture from 'Images/blogs/picture.png'
-import facebook from 'Images/icons/facebook.svg'
-import twitter from 'Images/icons/twitter.svg'
-import dribbble from 'Images/icons/dribbble.svg'
-import linkedin from 'Images/icons/linkedin.svg'
-import avatar from 'Images/blogs/avatar.png'
-import hero from 'Images/blogs/hero.png'
 import Comment from "../../components/forms/comment";
+import Title from "../../components/title/title";
 
 
 const BestDesignTips = () => {
     const socialMedia = [
-        facebook, twitter, dribbble, linkedin
+        facebook, instagram, twitter, ve
     ]
 
     const tags = [
@@ -22,7 +22,7 @@ const BestDesignTips = () => {
         <>
             <HeroSectionBanner title="Best Design Tips You Will Read This Year" breadcrumbs="Design" />
             <div className="lg:container xl:px-40 px-4 mx-auto md:mt-20 mt-10">
-                <img src={hero}/>
+                <img src={hero} />
                 <div className="md:mt-20 mt-10">
                     <span className=" text-typography-hurricane">By Dev's -- 24 August 2022 -- 4 COMMENTS</span>
                     <p className="text-typography-flint mt-4 md:text-lg text-justify">
@@ -97,7 +97,7 @@ const BestDesignTips = () => {
 
 
                 <div className="rounded md:mt-20 mt-10 gap-8 bg-background-merino md:p-8 p-6 flex md:flex-row flex-col items-center">
-                    <img src={avatar} alt="avatar" className="rounded-full w-40 h-40 object-cover"/>
+                    <img src={avatar} alt="avatar" className="rounded-full w-40 h-40 object-cover" />
                     <div>
                         <span className="block text-typography-graphite md:text-2xl text-xl font-bold md:text-left text-center">
                             Ethan Brooks
