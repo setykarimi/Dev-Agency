@@ -3,6 +3,7 @@ import phone from "Images/icons/phone.svg";
 import email from "Images/icons/email.svg";
 import HeroSectionBanner from "../components/banners/heroSectionBanner";
 import Message from "../components/forms/message";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const ContactUs = () => {
     const details = [
@@ -49,6 +50,19 @@ const ContactUs = () => {
                 </div>
 
                 <Message />
+
+                <MapContainer center={{ lat: 35.7219, lng: 51.3347 }} zoom={13} style={{ width: '100%', height: '500px', marginTop: '40px', borderRadius: "5px" }}>
+                    <TileLayer
+                        attribution='&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+
+                    <Marker position={[ 35.7219, 51.3347]}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                </MapContainer>
             </div>
         </>
     );
