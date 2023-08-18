@@ -32,7 +32,6 @@ const Navbar = () => {
     ]
 
     const showMenuHandler = () => {
-        console.log(showMenu);
         setShowMenu(!showMenu)
     }
     return (
