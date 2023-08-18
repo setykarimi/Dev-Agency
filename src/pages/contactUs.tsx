@@ -51,7 +51,7 @@ const ContactUs = () => {
 
                 <Message />
 
-                <MapContainer center={{ lat: 35.7219, lng: 51.3347 }} zoom={13} style={{ width: '100%', height: '500px', marginTop: '40px', borderRadius: "5px" }}>
+                <MapContainer center={{ lat: 35.7219, lng: 51.3347 }} zoom={13} style={{ width: '100%', height: '500px', marginTop: '40px', borderRadius: "5px", zIndex: '0'}}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
