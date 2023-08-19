@@ -32,7 +32,7 @@ type CardProps = {
     title: string
     desc: string
     background: string
-    link: string
+    link?: string
 }
 
 export const Card = ({ background, img, title, desc, link }: CardProps) => {
