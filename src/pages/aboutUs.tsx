@@ -1,8 +1,8 @@
-import HeroSectionBanner from "../components/banners/heroSectionBanner";
+import HeroSectionBanner from "Components/banners/heroSectionBanner";
 import aboutImg from "Images/aboutUs.png";
-import Title from "../components/title/title";
-import Brands from "../components/brands/brands";
-import { ourTeam } from "../assets/data/ourTeam";
+import Title from "Components/title/title";
+import Brands from "Components/brands/brands";
+import { ourTeam } from "Data/ourTeam";
 
 const AboutUs = () => {
     const items = [
