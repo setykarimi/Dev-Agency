@@ -7,7 +7,7 @@ import Projects from 'Pages/projects/projects';
 import { Watch, Education, Mdcl, Seo } from 'Pages/projects/projectsSub';
 import Blog from 'Pages/blog/blog';
 import BestDesignTips from 'Pages/blog/bestDesignTips';
-import AboutUs from 'Pages/AboutUs';
+import AboutUs from 'Pages/aboutUs';
 import ContactUs from 'Pages/contactUs';
 
 const routes = createBrowserRouter([
