@@ -5,9 +5,9 @@ import facebook from 'Images/icons/facebookOrange.svg';
 import instagram from 'Images/icons/instagramOrange.svg';
 import twitter from 'Images/icons/twitterOrange.svg';
 import ve from 'Images/icons/veOrange.svg';
-import HeroSectionBanner from "../../components/banners/heroSectionBanner";
-import Comment from "../../components/forms/comment";
-import Title from "../../components/title/title";
+import HeroSectionBanner from "Components/banners/heroSectionBanner";
+import Comment from "Components/forms/comment";
+import Title from "Components/title/title";
 
 
 const BestDesignTips = () => {
