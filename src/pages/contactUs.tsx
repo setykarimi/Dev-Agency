@@ -1,8 +1,8 @@
 import location from "Images/icons/location.svg";
 import phone from "Images/icons/phone.svg";
 import email from "Images/icons/email.svg";
-import HeroSectionBanner from "../components/banners/heroSectionBanner";
-import Message from "../components/forms/message";
+import HeroSectionBanner from "Components/banners/heroSectionBanner";
+import Message from "Components/forms/message";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const ContactUs = () => {
