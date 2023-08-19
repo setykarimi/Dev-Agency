@@ -42,7 +42,7 @@ export const Card = ({ background, img, title, desc, link }: CardProps) => {
 
             <span className="block -mt-12 font-bold text-2xl">{title}</span>
             <p className=" text-typography-flint text-lg">{desc}</p>
-            <Link to={link} className="font-medium underline text-lg">Learn More</Link>
+            <Link to={link ? link : ""} className="font-medium underline text-lg">Learn More</Link>
         </div>
     )
 }
