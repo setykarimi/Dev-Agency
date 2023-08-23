@@ -49,7 +49,7 @@ const Navbar = () => {
                 </button>
                 <div className={`flex md:flex-row flex-col md:static fixed md:top-auto top-0 md:p-0 p-8 md:left-auto md:h-auto ${showMenu ? "left-0" : "-left-96"} transition-all h-screen md:bg-transparent bg-background-maize md:w-auto w-1/2 gap-8 md:items-center`}>
                     <div className={`flex md:flex-row flex-col gap-4 z-50`}>
-                        {menuItems.map(({ name, link }) => <Link to={link} className={` border-b border-b-transparent text-typography-flint ${pathname == link ? "border-b border-b-primary-orange-default font-bold" : "font-medium"} hover:border-b hover:border-b-primary-orange-default hover:font-bold transition-all`}>{name}</Link>)}
+                        {menuItems.map(({ name, link }) => <Link to={link} className={` border-b  text-typography-flint ${pathname == link ? "border-b border-b-primary-orange-default font-bold" : "font-medium border-b-transparent"} hover:border-b hover:border-b-primary-orange-default hover:font-bold transition-all`}>{name}</Link>)}
                     </div>
                     <Link to="contact-us" className='py-2 px-4 bg-primary-orange-default text-white rounded'>Contact</Link>
                 </div>
