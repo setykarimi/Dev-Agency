@@ -15,7 +15,7 @@ export default function CardWhatWeProvide() {
                 </div>
 
                 <div className="flex md:justify-end justify-center md:order-none order-last ">
-                    <button className="bg-background-merino text-primary-orange-default md:py-3 py-2 md:px-8 px-4 h-fit w-fit rounded font-medium">See More</button>
+                    <Link to="/our-services" className="bg-background-merino text-primary-orange-default md:py-3 py-2 md:px-8 px-4 h-fit w-fit rounded font-medium">See More</Link>
                 </div>
 
 
