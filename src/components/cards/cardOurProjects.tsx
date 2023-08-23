@@ -16,7 +16,7 @@ export default function CardOurProjects() {
                 </div>
 
                 <div className="flex md:justify-end justify-center md:order-none order-last ">
-                    <button className="bg-background-merino text-primary-orange-default md:py-3 py-2 md:px-8 px-4 h-fit w-fit rounded font-medium">See More</button>
+                    <Link to="/projects" className="bg-background-merino text-primary-orange-default md:py-3 py-2 md:px-8 px-4 h-fit w-fit rounded font-medium">See More</Link>
                 </div>
                 {projects.slice(0, 2).map(({ backgroundColor, img, title }) => <Card backgroundColor={backgroundColor} img={img} title={title} />)}
             </div>
