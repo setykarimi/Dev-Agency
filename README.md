@@ -1,7 +1,5 @@
 # Dev Agency
-## React 
-### `type-script` 
-### `tailwind`
+### `React` ### `type-script` ### `tailwind`
 Hi guys👋,
 This is my first website with type-script.
 hope you enjoy it❤️.
