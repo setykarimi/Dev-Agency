@@ -20,7 +20,7 @@ export default function CardWhatWeProvide() {
 
 
                 <div className="md:col-span-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-                    {whatWeProvided.slice(0, 3).map(({ img, title, desc, background }) => <Card img={img} title={title} desc={desc} background={background} />)}
+                    {whatWeProvided.slice(0, 3).map(({ img, title, desc, background }) => <Card img={img} title={title} desc={desc} background={background} link="/our-services"/>)}
                 </div>
             </div>
         </>
