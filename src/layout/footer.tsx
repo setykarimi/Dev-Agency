@@ -10,11 +10,30 @@ import ve from 'Images/icons/ve.svg'
 
 const Footer = () => {
     const links = [
-        "Home",
-        "About us",
-        "Portfolio",
-        "Contact Me",
-        "Privacy Policy"
+        {
+            name: "Home",
+            link: "/"
+        },
+        {
+            name: "Our Services",
+            link: "/our-services"
+        },
+        {
+            name: "Projects",
+            link: "/projects"
+        },
+        {
+            name: "Blog",
+            link: "/blog"
+        },
+        {
+            name: "About Us",
+            link: "/about-us"
+        },
+        {
+            name: "Contact Us",
+            link: "/contact-us"
+        }
     ]
     
     const socialMedias = [
@@ -28,7 +47,7 @@ const Footer = () => {
                 <span className='font-bold text-white text-md:2xl text-xl'>DevAgency</span>
             </div>
             <div className='flex flex-wrap gap-8 justify-center my-10 pb-10 border-b border-b-[#A39189] text-[#D7D7D7]'>
-                {links.map((link) => <Link key={link} to={link} className=' whitespace-nowrap'>{link}</Link>)}
+                {links.map(({name,link}) => <Link key={link} to={link} className='whitespace-nowrap'>{name}</Link>)}
             </div>
 
             <div className='flex md:justify-end justify-center gap-4'>
