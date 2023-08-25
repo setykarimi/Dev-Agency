@@ -4,10 +4,10 @@ import google from "Images/logos/google.svg"
 import dribbble from "Images/logos/dribbble.svg"
 import amazon from "Images/logos/amazon.svg"
 
-const Brands = () => {
+const Brands = ({bottomRef}) => {
     const images = [behance, cocacola, google, dribbble, amazon]
     return (
-        <div className="flex flex-wrap md:justify-between justify-center items-center md:gap-4 gap-8 md:mt-20 mt-10">
+        <div ref={bottomRef} className="flex flex-wrap md:justify-between justify-center items-center md:gap-4 gap-8 md:mt-20 mt-10">
             {images.map((img) => <img src={img} alt="logo" className="lg:w-auto md:w-30 w-24"/>)}
         </div>
     );
