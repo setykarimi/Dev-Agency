@@ -12,7 +12,7 @@ const CardBestUserExperience = () => {
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 md:mt-10 mt-5 items-center">
                 <div className="xl:pr-20">
                     <Title title="Providing The World's Best User Experiences"
-                        customClass="xl:after:w-[20rem] lg:after:w-[24rem] md:after:w-[15rem] after:w-[9rem]"
+                        customClass="xl:after:w-[13rem] lg:after:w-[24rem] md:after:w-[24rem] after:w-[9rem]"
                     />
                     <p className="text-typography-flint md:text-lg mt-4">
                         Vestibulum blandit ut nunc vel bibendum semper elit eget dignissim rhoncus, nisl augue lacinia urna vel rutrum nisi nunc sit amet risus nulla ornare egestas.
