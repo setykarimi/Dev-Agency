@@ -17,7 +17,7 @@ const CardBestIdeas = () => {
                 </div>
                 <div className="xl:pr-20">
                     <Title title="Explore Your Best Ideas On A Whiteboard" 
-                    customClass="xl:after:w-[16rem] md:after:w-[20rem] after:w-[9rem]"
+                    customClass="xl:after:w-[13rem] md:after:w-[20rem] after:w-[9rem]"
                     />
                     <p className="text-typography-flint md:text-lg mt-4">
                         Vestibulum blandit ut nunc vel bibendum semper elit eget dignissim rhoncus, nisl augue lacinia urna vel rutrum nisi nunc sit amet risus nulla ornare egestas.
