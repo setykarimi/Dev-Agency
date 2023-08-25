@@ -6,13 +6,16 @@ import CardOurProjects from "Components/cards/cardOurProjects";
 import CardWhatWeProvide from "Components/cards/cardWhatWeProvide";
 import SliderHome from "Components/slider/sliderHome";
 import BannerNewsLetter from "Components/banners/bannerNewsLetter";
+import { useRef } from "react";
 
 const Home = () => {
+  const bottomRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
-      <BannerHome />
+      <BannerHome bottomRef={bottomRef} />
       <div className="lg:container xl:px-40 px-4 mx-auto">
-        <Brands />
+        <Brands bottomRef={bottomRef} />
         <CardOurProjects />
         <CardWhatWeProvide />
         <CardBestUserExperience />
