@@ -1,12 +1,13 @@
 import homeHeroSection from "Images/homeHeroSection.svg";
-import { useRef } from "react";
+import React, { forwardRef } from "react";
 
-const BannerHome = ({bottomRef}) => {
+
+const BannerHome = forwardRef<HTMLDivElement>(function (props, ref) {
 
     const navigateToBottomHandler = () => {
-        if (bottomRef.current) {
-            bottomRef.current.scrollIntoView({ behavior: 'smooth' });
-          }
+        if (ref?.current) {
+            ref?.current.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     return (<div className="bg-background-merino p-4" >
@@ -34,6 +35,6 @@ const BannerHome = ({bottomRef}) => {
             </div>
         </div>
     </div>);
-}
+})
 
 export default BannerHome;
