@@ -13,9 +13,9 @@ const Home = () => {
 
   return (
     <>
-      <BannerHome bottomRef={bottomRef} />
+      <BannerHome ref={bottomRef} />
       <div className="lg:container xl:px-40 px-4 mx-auto">
-        <Brands bottomRef={bottomRef} />
+        <Brands ref={bottomRef} />
         <CardOurProjects />
         <CardWhatWeProvide />
         <CardBestUserExperience />
