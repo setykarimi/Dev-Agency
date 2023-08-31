@@ -9,13 +9,13 @@ import BannerNewsLetter from "Components/banners/bannerNewsLetter";
 import { useRef } from "react";
 
 const Home = () => {
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
     <>
-      <BannerHome ref={bottomRef} />
+      <BannerHome ref={ref} />
       <div className="lg:container xl:px-40 px-4 mx-auto">
-        <Brands ref={bottomRef} />
+        <Brands ref={ref} />
         <CardOurProjects />
         <CardWhatWeProvide />
         <CardBestUserExperience />
