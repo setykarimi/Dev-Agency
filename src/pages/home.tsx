@@ -12,8 +12,9 @@ const Home = () => {
   const elementRef = useRef<HTMLDivElement>(null);
 
   const navigateToBottomHandler = () => {
-    console.log(elementRef);
-    
+    if (elementRef?.current) {
+      elementRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
   }
 
   return (
