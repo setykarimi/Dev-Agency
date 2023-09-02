@@ -1,11 +1,12 @@
 import logo from 'Images/logo.svg'
 import menu from 'Images/icons/menu.svg'
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react'
-
-
+import { useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
+
+    const ref = useRef<HTMLDivElement>(null);
+    const location = useLocation()
 
     const [showMenu, setShowMenu] = useState<boolean>(false)
     const { pathname } = useLocation()
@@ -36,13 +37,35 @@ const Navbar = () => {
     const showMenuHandler = () => {
         setShowMenu(!showMenu)
     }
+
+    useEffect(() => {
+        const checkIfClickedOutside = e => {
+            // If the menu is open and the clicked target is not within the menu,
+            // then close the menu
+            if (showMenu && ref.current && !ref.current.contains(e.target)) {
+                setShowMenu(false)
+            }
+        }
+
+        document.addEventListener("mousedown", checkIfClickedOutside)
+
+        return () => {
+            // Cleanup the event listener
+            document.removeEventListener("mousedown", checkIfClickedOutside)
+        }
+    }, [showMenu])
+
+    useEffect(() => {
+        setShowMenu(false)
+    }, [location.pathname])
+
     return (
-        <nav className="bg-background-merino p-4 flex sticky top-0 z-20">
+        <nav className="bg-background-merino p-4 flex sticky top-0 z-20" ref={ref}>
             <div className="lg:container xl:px-40 px-0 mx-auto flex justify-between items-center w-full">
-                <div className="logo flex items-center gap-2">
+                <Link to="/" className="logo flex items-center gap-2">
                     <img src={logo} alt='logo' className='w-4' />
                     <span className='font-bold text-typography-asphalt text-xl'>DevAgency</span>
-                </div>
+                </Link>
 
                 <button className='md:hidden block' onClick={showMenuHandler}>
                     <img src={menu} alt="menu" />
