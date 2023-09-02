@@ -1,16 +1,13 @@
 import homeHeroSection from "Images/homeHeroSection.svg";
-import React, { forwardRef } from "react";
+import React from "react";
 
+type BannerHomeProps= {
+    navigateHandler : (event : React.MouseEvent<HTMLButtonElement>) => void
+}
 
-const BannerHome = forwardRef<HTMLDivElement>(function (props, ref) {
+const BannerHome =({ navigateHandler }: BannerHomeProps) => {
 
-    const navigateToBottomHandler = () => {
-        if (ref?.current) {
-            ref?.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-
-    return (<div className="bg-background-merino p-4" >
+    return (<div className="bg-background-merino p-4">
         <div className="lg:container mx-auto xl:px-40">
             <div className="flex flex-col items-center justify-center pb-8">
                 <h1 className="flex flex-col md:text-5xl text-2xl font-extra-bold items-center md:mt-8 mt-4 md:px-0 px-10">
@@ -24,7 +21,7 @@ const BannerHome = forwardRef<HTMLDivElement>(function (props, ref) {
                     <span className="block mt-2">For Your Success</span>
                 </h1>
                 <div className="mt-6 flex gap-4 relative z-10">
-                    <button onClick={navigateToBottomHandler} className="text-white md:py-3 py-2 md:px-8 px-4 rounded bg-primary-orange-default md:text-xl font-medium">
+                    <button onClick={(event) => navigateHandler(event)} className="text-white md:py-3 py-2 md:px-8 px-4 rounded bg-primary-orange-default md:text-xl font-medium">
                         Get Started
                     </button>
                     <button className="text-primary-orange-default md:py-3 py-2 md:px-8 px-4 rounded bg-background-maize md:text-lg font-medium">
@@ -35,6 +32,5 @@ const BannerHome = forwardRef<HTMLDivElement>(function (props, ref) {
             </div>
         </div>
     </div>);
-})
-
+};
 export default BannerHome;
