@@ -9,13 +9,18 @@ import BannerNewsLetter from "Components/banners/bannerNewsLetter";
 import { useRef } from "react";
 
 const Home = () => {
-  const ref = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  const navigateToBottomHandler = () => {
+    console.log(elementRef);
+    
+  }
 
   return (
     <>
-      <BannerHome ref={ref} />
+      <BannerHome navigateHandler={navigateToBottomHandler} />
       <div className="lg:container xl:px-40 px-4 mx-auto">
-        <Brands ref={ref} />
+        <Brands ref={elementRef} />
         <CardOurProjects />
         <CardWhatWeProvide />
         <CardBestUserExperience />
